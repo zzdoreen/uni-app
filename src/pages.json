@@ -1,6 +1,5 @@
 {
-	"pages": [
-		{
+	"pages": [{
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "首页"
@@ -32,13 +31,21 @@
 			}
 		}
 	],
+	"subPackages": [{
+		"root": "subpages",
+		"pages": [{
+			"path": "chat/chat",
+			"style": {
+				"navigationBarTitleText": "在线聊天"
+			}
+		}]
+	}],
 	"tabBar": {
 		"color": "white",
 		"selectedColor": "black",
 		"borderStyle": "white",
 		"backgroundColor": "#8CA6DB",
-		"list": [
-			{
+		"list": [{
 				"pagePath": "pages/index/index",
 				"iconPath": "https://demosc.chinaz.net/Files/pic/iconsico/8242/e2.ico",
 				"text": "首页"

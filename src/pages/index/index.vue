@@ -2,9 +2,10 @@
   <view class="content">
     <!-- <image class="logo" src="/static/logo.png"></image> -->
     <view>
-      <text class="title">{{ title }}</text>
+      <!-- <text class="title">{{ title }}</text> -->
+	  <navigator url="../../subpages/chat/chat">聊天室</navigator>
     </view>
-    <navigator open-type="switchTab" url="/pages/me/index">me</navigator>
+    <!-- <navigator open-type="switchTab" url="/pages/me/index">me</navigator> -->
   </view>
 </template>
 

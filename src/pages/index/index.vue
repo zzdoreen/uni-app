@@ -24,7 +24,14 @@
 			Child
 		},
 		onLoad() {
-			console.log("load");
+			console.log("load a");
+			// 判断环境
+			console.log(process.env.NODE_ENV)
+			// 判断平台
+			console.log(uni.getSystemInfoSync().platform)
+			// #ifdef H5
+			alert('你好啊')
+			// #endif
 		},
 		onShow() {
 			console.log("show");

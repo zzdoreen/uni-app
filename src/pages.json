@@ -30,7 +30,16 @@
 				"navigationBarTitleText": "我的"
 			}
 		}
-	],
+	    ,{
+            "path" : "componets/child",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "子组件",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"subPackages": [{
 		"root": "subpages",
 		"pages": [{

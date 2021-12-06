@@ -1,21 +1,24 @@
 <template>
   <view>
-    <text>me</text>
+    <text>{{name}}</text>
   </view>
 </template>
 <script>
 export default {
   data() {
-    return {};
+    return {
+		name:'me'
+	};
   },
   onLoad() {
-    // #ifdef H5
-    
-    // #endif
-    let timmer = setTimeout(() => {
-      clearInterval(timmer);
-      uni.navigateTo({ url: "/pages/index/index" });
-    }, 2000);
+	  uni.$on('getMeFun',(str)=>{
+		  this.name = str
+		  console.log('me 页面的全局事件被触发')
+	  })
+    // let timmer = setTimeout(() => {
+    //   clearInterval(timmer);
+    //   uni.navigateTo({ url: "pages/index/index" });
+    // }, 2000);
   },
   methods: {
   },
